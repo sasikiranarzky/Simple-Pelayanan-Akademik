@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SIMPEL adalah prototipe sistem informasi pelayanan akademik mahasiswa.">
+  <title>SIMPEL — Sistem Informasi Pelayanan Akademik</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="SIMPEL beranda"><span class="brand-mark">S</span><span>SIMPEL<small>Pelayanan Akademik</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#jadwal">Jadwal</a>
+      <a href="#tugas">Tugas</a>
+      <a href="#layanan">Layanan</a>
+    </nav>
+    <a class="nav-cta" href="#layanan">Ajukan pertanyaan ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> PROTOTIPE SISTEM INFORMASI MAHASISWA</p>
+        <h1>Urus akademik jadi<br><span>lebih sederhana.</span></h1>
+        <p class="hero-text">Satu tempat untuk melihat jadwal, mengingat tugas, dan menemukan informasi layanan akademik.</p>
+        <div class="hero-actions"><a class="button primary" href="#jadwal">Lihat dashboard ↓</a><a class="text-link" href="#tentang">Kenali SIMPEL →</a></div>
+        <div class="hero-note"><span class="avatar-stack"><i>K</i><i>M</i><i>A</i></span><span>Dibuat untuk mendukung pengalaman akademik yang lebih tertata.</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="card-head"><div><p class="muted">RINGKASAN AKADEMIK</p><h2>Halo, Mahasiswa! 👋</h2></div><span class="pill">Demo</span></div>
+        <div class="stat-grid">
+          <div class="stat"><span class="stat-icon lilac">▦</span><strong>04</strong><small>Mata kuliah</small></div>
+          <div class="stat"><span class="stat-icon mint">✓</span><strong id="completedCount">01</strong><small>Tugas selesai</small></div>
+          <div class="stat"><span class="stat-icon peach">◷</span><strong id="pendingCount">03</strong><small>Tugas aktif</small></div>
+        </div>
+        <div class="next-event"><div class="event-date"><strong>16</strong><span>OKT</span></div><div><small class="muted">AGENDA BERIKUTNYA</small><strong>Diskusi akademik</strong><p>Periksa jadwal kelasmu sebelum berangkat.</p></div><span class="event-arrow">↗</span></div>
+        <p class="disclaimer">Data di atas adalah contoh untuk demonstrasi, bukan data akademik resmi.</p>
+      </div>
+    </section>
+
+    <section class="section intro" id="tentang">
+      <div><p class="eyebrow">TENTANG PROYEK</p><h2>Informasi yang rapi,<br>aktivitas yang terarah.</h2></div>
+      <p>SIMPEL (Sistem Informasi Pelayanan Akademik) merupakan prototipe website yang dirancang untuk membantu mahasiswa menemukan informasi akademik dasar secara lebih praktis. Proyek ini menunjukkan penerapan HTML, CSS, JavaScript, dan publikasi melalui GitHub Pages.</p>
+    </section>
+
+    <section class="section" id="jadwal">
+      <div class="section-heading"><div><p class="eyebrow">01 / JADWAL</p><h2>Rencanakan harimu.</h2></div><p class="muted">Contoh jadwal yang dapat disesuaikan.</p></div>
+      <div class="schedule-grid">
+        <article class="schedule-card"><div class="day">SEN <span>08.00–09.40</span></div><h3>Pengantar Sistem Informasi</h3><p>Ruang A • Contoh data</p><span class="tag blue">Kuliah</span></article>
+        <article class="schedule-card"><div class="day">SEL <span>10.00–11.40</span></div><h3>Manajemen Pendidikan</h3><p>Ruang B • Contoh data</p><span class="tag green">Diskusi</span></article>
+        <article class="schedule-card"><div class="day">KAM <span>13.00–14.40</span></div><h3>Praktik Sistem Informasi</h3><p>Laboratorium • Contoh data</p><span class="tag orange">Praktik</span></article>
+      </div>
+    </section>
+
+    <section class="section tasks-section" id="tugas">
+      <div class="section-heading"><div><p class="eyebrow">02 / DAFTAR TUGAS</p><h2>Langkah kecil, progres nyata.</h2></div><p class="muted">Centang tugas untuk mencoba fitur interaktif.</p></div>
+      <div class="task-panel">
+        <div class="task-summary"><span class="task-ring">✓</span><div><strong id="taskSummary">1 dari 4 tugas selesai</strong><p>Progres tugas demo</p></div><span class="progress-label" id="progressPercent">25%</span></div>
+        <div class="progress-track"><span id="progressBar" style="width:25%"></span></div>
+        <ul class="task-list" id="taskList">
+          <li><label><input type="checkbox" checked><span><strong>Memeriksa jadwal kuliah</strong><small>Perencanaan mingguan</small></span></label><span class="task-status done">Selesai</span></li>
+          <li><label><input type="checkbox"><span><strong>Membaca materi perkuliahan</strong><small>Belajar mandiri</small></span></label><span class="task-status">Belum</span></li>
+          <li><label><input type="checkbox"><span><strong>Mengerjakan tugas kelompok</strong><small>Kolaborasi</small></span></label><span class="task-status">Belum</span></li>
+          <li><label><input type="checkbox"><span><strong>Mengumpulkan tugas</strong><small>Pastikan sebelum tenggat</small></span></label><span class="task-status">Belum</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section services-section" id="layanan">
+      <div class="section-heading"><div><p class="eyebrow">03 / PUSAT LAYANAN</p><h2>Ada yang ingin ditanyakan?</h2></div><p class="muted">Form ini simulasi, tidak mengirim data ke server.</p></div>
+      <div class="service-layout">
+        <div class="service-info"><div class="service-icon">✳</div><h3>Suara mahasiswa itu penting.</h3><p>Gunakan formulir demo untuk mencoba alur penyampaian pertanyaan atau kendala akademik secara terstruktur.</p><div class="info-line"><span>01</span><p>Pilih topik yang sesuai.</p></div><div class="info-line"><span>02</span><p>Tulis pertanyaan dengan jelas.</p></div><div class="info-line"><span>03</span><p>Lihat konfirmasi simulasi.</p></div></div>
+        <form id="serviceForm" class="service-form">
+          <label for="studentName">Nama (opsional)</label><input id="studentName" name="studentName" placeholder="Nama mahasiswa">
+          <label for="topic">Topik pertanyaan</label><select id="topic" name="topic" required><option value="">Pilih topik</option><option>Jadwal perkuliahan</option><option>Administrasi akademik</option><option>Informasi tugas</option><option>Lainnya</option></select>
+          <label for="message">Pertanyaan atau kendala</label><textarea id="message" name="message" rows="4" placeholder="Jelaskan pertanyaanmu..." required></textarea>
+          <button class="button primary full" type="submit">Kirim simulasi ↗</button>
+          <p class="form-result" id="formResult" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <section class="closing"><p class="eyebrow">SIMPEL • PROYEK UTS</p><h2>Teknologi sederhana,<br>dengan tujuan yang jelas.</h2><p>Prototipe pembelajaran untuk mengeksplorasi sistem informasi dan kolaborasi digital.</p><a class="button light" href="#beranda">Kembali ke atas ↑</a></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#beranda"><span class="brand-mark">S</span><span>SIMPEL<small>Proyek pembelajaran</small></span></a><p>© <span id="year"></span> SIMPEL. Prototipe akademik — bukan layanan resmi kampus.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
